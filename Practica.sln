@@ -5,17 +5,17 @@ VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capítulo 2 y 3", "Capítulo 2 y 3\Capítulo 2 y 3.csproj", "{40A734A5-274D-4FBA-AA20-3CD3133BA159}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directivas Preprocesador", "Directivas Preprocesador", "{7AA79AC2-7D09-4CFF-BCAE-88BC1A8DD871}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capítulo 4", "Capítulo 4\Capítulo 4.csproj", "{8DE063EB-2CFC-463B-AB61-15F888660B9B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StandardLibrary", "..\Pr-tica-Binapps\StandardLibrary\StandardLibrary.csproj", "{6DDFA0CA-F7E1-42AD-8FD4-9C000B3554B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capítulo 5", "Capítulo 5\Capítulo 5.csproj", "{0AAB9CCE-1868-40CB-BCEB-480494B63D7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "..\Pr-tica-Binapps\ClassLibrary\ClassLibrary.csproj", "{B4D20A74-C40D-472C-8FC0-D5BDD39D09D2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directivas Preprocesador", "Directivas Preprocesador", "{2F53D42C-A21A-4678-88CC-D284727781B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassAndroidLibrary", "..\Pr-tica-Binapps\ClassAndroidLibrary\ClassAndroidLibrary.csproj", "{B984A193-411A-4F83-B97A-3F4545B6C06E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassAndroidLibrary", "..\..\source\repos\Pr-tica-Binapps\ClassAndroidLibrary\ClassAndroidLibrary.csproj", "{B984A193-411A-4F83-B97A-3F4545B6C06E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capítulo 5", "Capítulo 5\Capítulo 5.csproj", "{0AAB9CCE-1868-40CB-BCEB-480494B63D7A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "..\..\source\repos\Pr-tica-Binapps\ClassLibrary\ClassLibrary.csproj", "{B4D20A74-C40D-472C-8FC0-D5BDD39D09D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StandardLibrary", "..\..\source\repos\Pr-tica-Binapps\StandardLibrary\StandardLibrary.csproj", "{29DDB81B-6ACE-4DE5-A032-3886E32A9E8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,30 +31,30 @@ Global
 		{8DE063EB-2CFC-463B-AB61-15F888660B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DE063EB-2CFC-463B-AB61-15F888660B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DE063EB-2CFC-463B-AB61-15F888660B9B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6DDFA0CA-F7E1-42AD-8FD4-9C000B3554B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6DDFA0CA-F7E1-42AD-8FD4-9C000B3554B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6DDFA0CA-F7E1-42AD-8FD4-9C000B3554B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6DDFA0CA-F7E1-42AD-8FD4-9C000B3554B9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B4D20A74-C40D-472C-8FC0-D5BDD39D09D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4D20A74-C40D-472C-8FC0-D5BDD39D09D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B4D20A74-C40D-472C-8FC0-D5BDD39D09D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B4D20A74-C40D-472C-8FC0-D5BDD39D09D2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B984A193-411A-4F83-B97A-3F4545B6C06E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B984A193-411A-4F83-B97A-3F4545B6C06E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B984A193-411A-4F83-B97A-3F4545B6C06E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B984A193-411A-4F83-B97A-3F4545B6C06E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0AAB9CCE-1868-40CB-BCEB-480494B63D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0AAB9CCE-1868-40CB-BCEB-480494B63D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AAB9CCE-1868-40CB-BCEB-480494B63D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AAB9CCE-1868-40CB-BCEB-480494B63D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B984A193-411A-4F83-B97A-3F4545B6C06E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B984A193-411A-4F83-B97A-3F4545B6C06E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B984A193-411A-4F83-B97A-3F4545B6C06E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B984A193-411A-4F83-B97A-3F4545B6C06E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4D20A74-C40D-472C-8FC0-D5BDD39D09D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4D20A74-C40D-472C-8FC0-D5BDD39D09D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4D20A74-C40D-472C-8FC0-D5BDD39D09D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4D20A74-C40D-472C-8FC0-D5BDD39D09D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29DDB81B-6ACE-4DE5-A032-3886E32A9E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29DDB81B-6ACE-4DE5-A032-3886E32A9E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29DDB81B-6ACE-4DE5-A032-3886E32A9E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29DDB81B-6ACE-4DE5-A032-3886E32A9E8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{6DDFA0CA-F7E1-42AD-8FD4-9C000B3554B9} = {7AA79AC2-7D09-4CFF-BCAE-88BC1A8DD871}
-		{B4D20A74-C40D-472C-8FC0-D5BDD39D09D2} = {7AA79AC2-7D09-4CFF-BCAE-88BC1A8DD871}
-		{B984A193-411A-4F83-B97A-3F4545B6C06E} = {7AA79AC2-7D09-4CFF-BCAE-88BC1A8DD871}
+		{B984A193-411A-4F83-B97A-3F4545B6C06E} = {2F53D42C-A21A-4678-88CC-D284727781B0}
+		{B4D20A74-C40D-472C-8FC0-D5BDD39D09D2} = {2F53D42C-A21A-4678-88CC-D284727781B0}
+		{29DDB81B-6ACE-4DE5-A032-3886E32A9E8F} = {2F53D42C-A21A-4678-88CC-D284727781B0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CFADF969-5EC1-4A38-9C31-95E939803EAC}
