@@ -11,13 +11,9 @@ namespace Capítulo_5
         {
             //Constructores Derivados 
             ClaseHija ch = new ClaseHija();
-            //Esto no esta permitido => ClaseHija este = new ClaseHija(true);
-
-
-
-
-
-
+            
+            //Esto no esta permitido  
+            //ClaseHija este = new ClaseHija(true);
 
 
 
@@ -69,6 +65,8 @@ namespace Capítulo_5
             {
                 //False
             }
+
+
 
 
             //Interfaces

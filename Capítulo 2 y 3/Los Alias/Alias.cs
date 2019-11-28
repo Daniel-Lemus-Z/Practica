@@ -13,7 +13,7 @@ namespace Capítulo_2_y_3.Los_Alias1
 
 namespace Capítulo_2_y_3.Los_Alias2
 {
-    public class Class2
+    public class Class
     {
 
 
