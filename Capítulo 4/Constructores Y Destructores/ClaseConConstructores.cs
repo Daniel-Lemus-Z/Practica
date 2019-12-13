@@ -13,8 +13,8 @@ namespace Capítulo_4.Constructores_Y_Destructores
 
         //Los contructores son métodos especificos que permiten suministrar el código de inicialización de los objetos
 
-        //Pueden existir constructores vacios (sin parámetros), de por si cuando se genera una clase esta contiene un constructores vacio definido implícitamente, pero una vez creemos un constructor
-        //este desparace y lo debemos crear nosotros
+        //Pueden existir constructores vacios (sin parámetros), de por si cuando se genera una clase esta contiene un constructores vacio
+        //definido implícitamente, pero una vez creemos un constructor este desparace y lo debemos crear nosotros
         public ClaseConConstructores()
         {
 

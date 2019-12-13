@@ -8,7 +8,7 @@ namespace Capítulo_4.Campos_y_Propiedades
 {
     public class ClaseConCampos
     {
-        //Estos son campos, sob variables de la clase que pueden ser por valor o por referencia 
+        //Estos son campos, son variables de la clase que pueden ser por valor o por referencia 
         public string Nombre;
         public string Apellido;
         public int Identificacion;

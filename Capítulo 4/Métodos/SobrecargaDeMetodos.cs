@@ -23,6 +23,18 @@ namespace Capítulo_4.Métodos
         {
             string rta = cadena1 + " " + cadena2;
             return rta;
+            //Sumax(n1: 4, n2: "hola");
+        }
+
+
+        public void Sumax(int n1, string n2)
+        {
+
+        }
+
+        public void Sumax(string n2, int n1)
+        {
+
         }
 
     }

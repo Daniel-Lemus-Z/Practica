@@ -10,7 +10,9 @@ namespace Capítulo_5
         static void Main(string[] args)
         {
             //Constructores Derivados 
-            ClaseHija ch = new ClaseHija();
+            Herencia.ClaseHija ch = new Herencia.ClaseHija();
+            ch.xx();
+            ch.MetodoBase();
             
             //Esto no esta permitido  
             //ClaseHija este = new ClaseHija(true);

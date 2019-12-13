@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Capítulo_4.Estructuras
 {
+    //La estructura no soporta la herencia 
+    //La estructura hereda de ValueType
     public struct Estructura
     {
         double Longitud;

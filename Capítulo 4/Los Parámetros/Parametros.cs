@@ -8,7 +8,7 @@ namespace Capítulo_4.Los_Parámetros
 {
     public class Parametros
     {
-        public static int prueba(params int [] I)
+        public static int prueba(params int []I)
         {
             int result = 0;
             for (int i = 0; i < I.Length; i++)

@@ -11,6 +11,7 @@ namespace Capítulo_4.Constructores_Y_Destructores
 
         public string Nombre;
 
+
         //Destructor
         //Los destructores son métodos que se ejecutan automáticamente 
         //Los destructores me sirven para el proceso de recuperación de memoria para un objeto que no se referencie más
@@ -18,10 +19,10 @@ namespace Capítulo_4.Constructores_Y_Destructores
         //Declaración de un destructor
         ~ClaseConDestructor()
         {
-
+            Console.WriteLine("Instancia destruida");
         }
 
         //Declaración de un destructor en forma de expresión
-        // ~ClaseConDestructor() => Nombre = null;
+        //~ClaseConDestructor() => Nombre = null;
     }
 }

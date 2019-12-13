@@ -17,7 +17,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "..\..\sourc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StandardLibrary", "..\..\source\repos\Pr-tica-Binapps\StandardLibrary\StandardLibrary.csproj", "{29DDB81B-6ACE-4DE5-A032-3886E32A9E8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capítulo 6", "Capítulo 6\Capítulo 6.csproj", "{8FAF3BE0-0965-481C-A8B4-62A3C085A88B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capítulo 6", "Capítulo 6\Capítulo 6.csproj", "{8FAF3BE0-0965-481C-A8B4-62A3C085A88B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capítulo 7", "Capítulo 7\Capítulo 7.csproj", "{91C37894-0478-40A6-BD56-E46492C20D33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{8FAF3BE0-0965-481C-A8B4-62A3C085A88B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FAF3BE0-0965-481C-A8B4-62A3C085A88B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FAF3BE0-0965-481C-A8B4-62A3C085A88B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C37894-0478-40A6-BD56-E46492C20D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C37894-0478-40A6-BD56-E46492C20D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C37894-0478-40A6-BD56-E46492C20D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C37894-0478-40A6-BD56-E46492C20D33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

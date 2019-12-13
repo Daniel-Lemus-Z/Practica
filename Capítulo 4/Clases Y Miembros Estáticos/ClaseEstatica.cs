@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Capítulo_4.Clases_Y_Miembros_Estáticos
 {
-    public class ClaseEstatica
+    public static class ClaseEstatica
     {
         //La palabra reservada static nos permite compartir los miembros entres varias intancias y crear clases que no necesiten ser instaciadas 
         //Los miembros que se marcan con la palabra reservada static solo existen una vez 

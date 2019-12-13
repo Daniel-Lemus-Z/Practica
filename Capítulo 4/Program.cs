@@ -42,7 +42,7 @@ namespace Capítulo_4
             Console.WriteLine("..................................");
 
             //Paso por referencia con ref
-            //En el paro por referencia con ref no se crea una copia del valor que se esta pasando, se pasa el variable original 
+            //En el paso por referencia con ref no se crea una copia del valor que se esta pasando, se pasa el variable original 
             int numero2 = 50;
             PasoPorReferenciaConRef.PruebaPRRef(ref numero2);
             Console.WriteLine("Número despues : " + numero2);
@@ -58,7 +58,9 @@ namespace Capítulo_4
             //Palabra reservada params
             Parametros.prueba(1);
             Parametros.prueba(1, 2);
+            Parametros.prueba();
             Parametros.prueba(new int[] { 1, 2, 4, 8, 16 });
+            Parametros.prueba(new int[] {  });
 
             //Parámetros opcionales
             //Un parámetro es opcional cuando en la declaración del método se le asigna un valor a uno de ellos, esto quiere indicar que al usar el método se puede mandar el parámetro o no y no afecta
@@ -80,13 +82,15 @@ namespace Capítulo_4
             //posibiidad de que se nos olvide cambiar este y el codigo falle
             string nombre = "Juan";
             Console.WriteLine(nameof(nombre));
+            Console.WriteLine(nameof(Parametros));
+            Console.WriteLine(nameof(Parametros.Equals));
             Console.WriteLine("..................................");
 
             //Tuplas
             //Me permiten devolver varios valores en una sola llamada
-            var nombres = Tuplas.SeparaNombre("Pablo-Escobar");
-            Console.WriteLine("Tupla: " + nombres.nom1);
-            Console.WriteLine("Tupla: " + nombres.nom2);
+            //var nombres = Tuplas.SeparaNombre("Pablo-Escobar");
+            //Console.WriteLine("Tupla: " + nombres.nom1);
+            //Console.WriteLine("Tupla: " + nombres.nom2);
             Console.WriteLine("..................................");
 
             //Constructores
@@ -103,6 +107,7 @@ namespace Capítulo_4
             //Indexadores
             //Nos proporcionan una forma intuitiva de acceder a los miembros de un objeto que encapsula un array o una colección
             //Los indexadores utilizan los corchetes [ ] para acceder a los elementos
+
             string s = "Hola";
             char c = s[2];
             Console.WriteLine(c);
@@ -158,6 +163,11 @@ namespace Capítulo_4
             Console.WriteLine("..................................");
             Console.ReadKey();
 
+
+
+            ClaseConDestructor x = new ClaseConDestructor();
+
+            x = null;
 
 
 
