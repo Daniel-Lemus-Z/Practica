@@ -6,6 +6,9 @@ namespace Capítulo_6.Interfaces_Genéricas.Covarianza_Y_Contravarianza
 {
     public class Clase2 : Clase1
     {
+        public Clase2()
+        {
 
+        }
     }
 }

@@ -11,10 +11,11 @@ namespace Capítulo_6
         {
             //Tipos Genéricos
 
-            ClaseGenerica<int> cg1 = new ClaseGenerica<int>();
-            ClaseGenerica<Object> cg2 = new ClaseGenerica<object>();
+            //ClaseGenerica<int> cg1 = new ClaseGenerica<int>();
+            //ClaseGenerica<Object> cg2 = new ClaseGenerica<object>();
+            ClaseGenerica<Clase2> cg3 = new ClaseGenerica<Clase2>();
 
-            ClaseGenerica2<int, string> cg3 = new ClaseGenerica2<int, string>();
+            ClaseGenerica2<int, string> cg4 = new ClaseGenerica2<int, string>();
 
 
            

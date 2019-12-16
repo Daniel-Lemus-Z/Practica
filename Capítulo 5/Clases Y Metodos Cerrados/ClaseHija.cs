@@ -24,6 +24,7 @@ namespace Capítulo_5.Clases_Y_Metodos_Cerrados
         //}
 
         //Siempre es posible realizar una sobrecargar con la palabra reservada new
+        //new = Shadows
         public new void MetodoBase()
         {
 

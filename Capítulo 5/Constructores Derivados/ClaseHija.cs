@@ -6,7 +6,7 @@ namespace Capítulo_5.Constructores_Derivados
 {
     public class ClaseHija : ClaseBase
     {
-        public ClaseHija()
+        public ClaseHija() : base()
         {
             this.PropiedadBase = 5;
         }

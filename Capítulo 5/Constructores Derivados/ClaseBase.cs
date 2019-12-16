@@ -4,16 +4,26 @@ using System.Text;
 
 namespace Capítulo_5.Constructores_Derivados
 {
-    public class ClaseBase
+    public class ClaseBase : Object
     {
         public virtual int PropiedadBase { get; set; }
 
         public ClaseBase()
         {
-            this.PropiedadBase = 10;
+
         }
 
-        public ClaseBase(int i)
+        ////public ClaseBase()
+        ////{
+        ////    this.PropiedadBase = 10;
+        ////}
+
+        public ClaseBase(int i) : base()
+        {
+            this.PropiedadBase = i;
+        }
+        
+        public ClaseBase(int i, int j) : base()
         {
             this.PropiedadBase = i;
         }

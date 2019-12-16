@@ -10,8 +10,9 @@ namespace Capítulo_5.Clases_Y_Miembros_Abstractos
     public abstract class ClaseBase
     {
         //Las clases abstractas pueden contener miembros no abstractos que implementen su propia lógica y se pueden marcar como virtuales para así poder sobreescribirlos en las clases que hereden
+        //Virtual = Overridable
         public virtual bool PropiedadBase { get; set; }
-
+        //Abstract = MustInherit
         public abstract bool PropiedadAbstracta { get; set; }
 
         public virtual void MetodoBase()
@@ -21,6 +22,14 @@ namespace Capítulo_5.Clases_Y_Miembros_Abstractos
 
         public abstract void MetodoAbstracto();
 
+
+    }
+
+    public interface Iejemplo
+    {
+        int Propiedad { get; set; }
+
+        void Metodo();
 
     }
 }

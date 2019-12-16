@@ -7,6 +7,7 @@ namespace Capítulo_5.Clases_Y_Miembros_Abstractos
     //La clase que herede de una clase abstracta debe implementar todos los miembros abstractos con la palabra reservada override
     public class ClaseHija : ClaseBase
     {
+        //Override = Overrides
         public override bool PropiedadAbstracta { get; set; }
 
         public override void MetodoAbstracto()
