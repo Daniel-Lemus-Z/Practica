@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Capítulo_7.Eventos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace Capítulo_7
 {
     public class Program
     {
+        //Son objetos especiales que tienen referencia a un método
+
         //Un delegado es un tipo que encapsula de forma segura un método, es una especie de puente entre la llamada a un método
         //y el método deseado
 
@@ -40,7 +43,32 @@ namespace Capítulo_7
 
         static void Main(string[] args)
         {
-            
+            ClaseConEventos e = new ClaseConEventos();
+            //Se crea el evento y asigna el metodo estatico al evento, 
+                //El operador += indica que se esta suscribiendo al evento
+                //El operador -= indica que se esta desuscribiendo al evento
+            e.evento += OnEvento;
+            //hace lo mismo que la primera pero con el EventHandler, ambas funcionan igual
+            e.evento += new ClaseConEventos1.EventHandler(OnEvento);
+
+            e.OnEvento("HolaMundo");
+
+
+            //----------------------------------------------------------------------------------------------------------
+            ClaseConEventos2 obj1 = new ClaseConEventos2();
+            string result = obj1.WelcomeUser
+
+
+
         }
+
+        //Los eventos proporcionan un medio apropiado para que los objetos puedan señalizar cambios de estado 
+        //que pueden resultar útiles para los clientes de ese objeto
+
+        public static void OnEvento(String s)
+        {
+            Console.WriteLine(s);
+        }
+
     }
 }

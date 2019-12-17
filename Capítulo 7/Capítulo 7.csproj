@@ -48,6 +48,7 @@
     <Compile Include="Delegados\Delegados Genéricos\Clase1DG.cs" />
     <Compile Include="Delegados\Métodos de destino múltiples\MetodosMultiples.cs" />
     <Compile Include="Delegados\Parámetros de Método\Clase1PM.cs" />
+    <Compile Include="Eventos\ClaseConEventos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,7 +56,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Eventos\" />
     <Folder Include="Expresiones Lambda\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
