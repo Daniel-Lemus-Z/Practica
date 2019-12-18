@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Capítulo_6.Interfaces_Genéricas.Restricciones_De_Tipo
 {
-    public class IRestriccionDeTipo<T>
+    public class IRestriccionDeTipo
     {
         public void MiMetodo<T> () where T : class
         {
@@ -19,7 +19,7 @@ namespace Capítulo_6.Interfaces_Genéricas.Restricciones_De_Tipo
         {
             //El tipo debe de tener un constructor sin parámetros
         }
-        public void MiMetodo4<T>() where U : T
+        public void MiMetodo4<T, U>() where U : T
         {
             //El tipo representado por U debe ser idéntico al tipo T
         }

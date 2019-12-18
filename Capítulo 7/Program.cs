@@ -1,4 +1,5 @@
 ﻿using Capítulo_7.Eventos;
+using Capítulo_7.Expresiones_Lambda;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,10 +44,12 @@ namespace Capítulo_7
 
         static void Main(string[] args)
         {
-            ClaseConEventos e = new ClaseConEventos();
+            ClaseConEventos1 e = new ClaseConEventos1();
             //Se crea el evento y asigna el metodo estatico al evento, 
-                //El operador += indica que se esta suscribiendo al evento
-                //El operador -= indica que se esta desuscribiendo al evento
+
+            //El operador += indica que se esta suscribiendo al evento
+            //El operador -= indica que se esta desuscribiendo al evento
+
             e.evento += OnEvento;
             //hace lo mismo que la primera pero con el EventHandler, ambas funcionan igual
             e.evento += new ClaseConEventos1.EventHandler(OnEvento);
@@ -56,7 +59,68 @@ namespace Capítulo_7
 
             //----------------------------------------------------------------------------------------------------------
             ClaseConEventos2 obj1 = new ClaseConEventos2();
-            string result = obj1.WelcomeUser
+            string result = obj1.WelcomeUser("Daniel");
+            Console.WriteLine(result);
+
+
+
+
+
+
+
+            //Lambdas
+            Lambdas l = new Lambdas();
+            l.Multiplicacion();
+            l.ValorAbs();
+
+
+            Func<int, int> square = x => x * x;
+            Console.WriteLine(square(5));
+
+            //Las expresiones lambda también se pueden convertir en los tipos de árbol de expresión
+            System.Linq.Expressions.Expression<Func<int, int>> f = x => x * x;
+
+
+
+            //Captura de variables
+            int cv1 = CapturaDeVariables.Test1(2);
+            Console.WriteLine(cv1);
+
+            int cv2 = CapturaDeVariables.Test2(2);
+            Console.WriteLine(cv2);
+
+            CapturaDeVariables.Test3();
+
+
+
+            Func<string>[] F = new Func<string>[3];
+            for (int i = 0; i < 3; i++)
+            {
+                F[i] = () => i.ToString();
+            }
+
+            string s = string.Empty;
+            foreach (Func<string> p in F)
+            {
+                Console.WriteLine(s += p());
+            }
+
+
+            for (int i = 0; i < 3; i++)
+            {
+                int j = i;
+                F[i] = () => j.ToString();
+                Console.WriteLine(j);
+            }
+
+
+
+            Console.ReadLine();
+
+
+
+
+
 
 
 

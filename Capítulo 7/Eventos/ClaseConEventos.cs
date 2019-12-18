@@ -14,6 +14,8 @@ namespace Capítulo_7.Eventos
 
         public void OnEvento(String s)
         {
+            //Siempre hay que asegurarse de que el evento tiene suscriptor (que no sea null), ya que si intentamos desencadenar
+            //un evento sin suscriptor, se producirá una excepción
             if (evento != null)
                 evento(s);
         }
@@ -34,7 +36,10 @@ namespace Capítulo_7.Eventos
 
         public string WelcomeUser(string username)
         {
-            return "Welcome" + username;
+            return "Welcome  " + username;
         }
     }
+
+
+
 }
