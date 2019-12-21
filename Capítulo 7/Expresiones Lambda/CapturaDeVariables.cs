@@ -18,7 +18,7 @@ namespace Capítulo_7.Expresiones_Lambda
         //Las variablescapturadas seevalúan cuandose invocael delegadoy nocuando sedefine laexpresión lambda
         public static int Test2(int factor)
         {
-            Func<int, int> multiplo = x => x * factor;
+            Func<int, int> multiplo = x => x * factor; 
             factor = 3;
             return multiplo(10);
         }
