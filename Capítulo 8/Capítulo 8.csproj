@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C54FD6BC-0D2C-4B66-9CA1-C57818D9FFAC}</ProjectGuid>
+    <ProjectGuid>{AB357F74-70C1-4425-9C2C-404733BCBAD3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Capítulo_8</RootNamespace>
     <AssemblyName>Capítulo 8</AssemblyName>
@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EmailTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MailProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MailProperties.Designer.cs">
+      <DependentUpon>MailProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MailServerSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MailServerSettings.Designer.cs">
+      <DependentUpon>MailServerSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,7 +71,14 @@
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MailProperties.resx">
+      <DependentUpon>MailProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MailServerSettings.resx">
+      <DependentUpon>MailServerSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
