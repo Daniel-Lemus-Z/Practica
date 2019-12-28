@@ -19,17 +19,27 @@ namespace Capítulo_19
 
             string s1 = "ABCDEF";
             string s2 = s1.Prueba();
-            //string s3 = Extension.Prueba(s1);
+            string s3 = Extension.Prueba(s1);
+
             Console.WriteLine(s2);
 
 
+            OperadoresDeConsultas.FiltroWhere("Bogota");
+            OperadoresDeConsultas.FiltroOfType();
+            OperadoresDeConsultas.FiltroSelectMany();
+            OperadoresDeConsultas.FiltroSkipYTake();
+            OperadoresDeConsultas.FiltroOderBy();
+            OperadoresDeConsultas.FiltroThenBy();
+            OperadoresDeConsultas.FiltroGroupBy();
+            OperadoresDeConsultas.FiltroJoin();
+            //OperadoresDeConsultas.FiltroAgregar();
+            //OperadoresDeConsultas.FiltroConvertir();
 
 
-
-
-
-
-
+            ConsultasParalelas.CalcularValorMedio();
+            ConsultasParalelas.ParticionarUnaConsulta();
+            ConsultasParalelas.AnularConsulta();
+            
             Console.ReadKey();
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Capítulo_19
 {
-    ////Una consulta LINQ debe empezar por la cláusula from y terminar por la cláusula select o group
+    //Una consulta LINQ debe empezar por la cláusula from y terminar por la cláusula select o group
     // Entre estas dos  cláusulas de inicio y fin, opcionalmente, puede tener cláusulas where, orderby o join, entre otras
 
     public class ConsultasLINQ

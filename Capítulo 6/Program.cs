@@ -2,6 +2,7 @@
 using Capítulo_6.Tipos_Genéricos;
 using System;
 using System.Collections.Generic;
+using Capítulo_2_y_3.Constantes;
 
 namespace Capítulo_6
 {
@@ -33,6 +34,8 @@ namespace Capítulo_6
             //implícitas hacia un tipo más variado
             IEqualityComparer<ClaseX1> clasex1 = new CompararX();
             IEqualityComparer<ClaseX2> clasex2 = clasex1;
+
+
         }
     }
 }

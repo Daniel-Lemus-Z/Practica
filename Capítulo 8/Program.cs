@@ -8,8 +8,9 @@ namespace Capítulo_8
 {
     static class Program
     {
+
         /// <summary>
-        /// The main entry point for the application.
+        /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
         static void Main()
@@ -18,5 +19,7 @@ namespace Capítulo_8
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
         }
+
+        
     }
 }
