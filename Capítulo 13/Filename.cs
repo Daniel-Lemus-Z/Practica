@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -45,4 +46,49 @@ namespace Capítulo_13
             Console.WriteLine("Linea:" + lineNumber);
         }
     }
+
+
+    public class Person : INotifyPropertyChanged
+    {
+        private string _fisrtname;
+        public string FirstName
+        {
+            get
+            {
+                return _fisrtname;
+            }
+            set
+            {
+                _fisrtname = value;
+                OnPropertyChanged();
+                //OnPropertyRaised(nameof(FirstName));
+                //OnPropertyRaised("FirstName"); antes
+            }
+        }
+
+        private string _lastname;
+        public string LastName
+        {
+            get
+            {
+                return _lastname;
+            }
+            set
+            {
+                _lastname = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void OnPropertyChanged([CallerMemberName] string propertyname = null)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyname));
+            }
+        }
+
+    }
+
 }

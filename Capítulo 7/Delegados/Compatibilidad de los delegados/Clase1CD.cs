@@ -12,8 +12,8 @@ namespace Capítulo_7.Delegados.Compatibilidad_de_los_delegados
         public Clase1CD(string s1, string s2)
         {
             Concatenar1 C1 = Concatenados;
-            string resultado1 = C1(s1, s2);
-
+            string resultado1 = C1(s1, s2);       
+           
             Concatenar2 C2 = Concatenados;
             string resultado2 = (string)C2(s1, s2);
 

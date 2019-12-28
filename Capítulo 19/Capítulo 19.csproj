@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ConsultasLINQ.cs" />
     <Compile Include="Extension.cs" />
+    <Compile Include="OperadoresDeConsultas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

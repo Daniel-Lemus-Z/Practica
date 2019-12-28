@@ -8,12 +8,15 @@ namespace Capítulo_13
 {
     class Program
     {
+        public int KX = 0;
+
         static void Main(string[] args)
         {
             //Error de ejecución
             //int i = 0;
             //int j = 10 / i;
 
+            var pro = System.Diagnostics.Process.GetCurrentProcess();
 
             //Condición de parada
             int h = 0;
