@@ -20,9 +20,7 @@ namespace Capítulo_7.Eventos
                 evento(s);
         }
     }
-
-
-
+    
 
     public delegate string MiDelegado(string str);
     public class ClaseConEventos2
@@ -39,7 +37,5 @@ namespace Capítulo_7.Eventos
             return "Welcome  " + username;
         }
     }
-
-
 
 }

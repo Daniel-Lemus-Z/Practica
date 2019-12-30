@@ -7,6 +7,8 @@ using static Capítulo_7.Program;
 
 namespace Capítulo_7.Delegados.Delegados_Genéricos
 {
+    public delegate T Calculo<T>(T i, T j);
+    
     public class Clase1DG
     {
         public Clase1DG(int i, int j)

@@ -24,7 +24,8 @@ namespace Capítulo_7.Expresiones_Lambda
         
         public void ValorAbs()
         {
-            ValorAbsoluto A = x =>
+
+            ValorAbsoluto A = (x) =>
             {
                 if (x < 0)
                 {

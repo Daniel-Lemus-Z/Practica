@@ -46,13 +46,16 @@
     <Compile Include="Delegados\Clase1.cs" />
     <Compile Include="Delegados\Compatibilidad de los delegados\Clase1CD.cs" />
     <Compile Include="Delegados\Delegados Genéricos\Clase1DG.cs" />
+    <Compile Include="Delegados\Delegados Genéricos\Clase1DG_RAYADO.cs" />
     <Compile Include="Delegados\Métodos de destino múltiples\MetodosMultiples.cs" />
     <Compile Include="Delegados\Parámetros de Método\Clase1PM.cs" />
     <Compile Include="Eventos\ClaseConEventos.cs" />
+    <Compile Include="Eventos\ClaseConEventos_RAYADO.cs" />
     <Compile Include="Expresiones Lambda\CapturaDeVariables.cs" />
     <Compile Include="Expresiones Lambda\DelegadosGenericos.cs" />
     <Compile Include="Expresiones Lambda\FuncionesLocales.cs" />
     <Compile Include="Expresiones Lambda\Lambdas.cs" />
+    <Compile Include="Expresiones Lambda\Lambdas_RAYADO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
