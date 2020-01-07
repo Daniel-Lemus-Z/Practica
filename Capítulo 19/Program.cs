@@ -10,6 +10,23 @@ namespace Capítulo_19
     {
         static void Main(string[] args)
         {
+            ConsultasParalelas.AnularConsulta();
+
+            ConsultasParalelas.ParticionarUnaConsulta();
+
+            ConsultasParalelas.CalcularValorMedio();
+
+            OperadoresDeConsultas.FiltroAgregar();
+
+            OperadoresDeConsultas.FiltroJoin(); 
+            
+            OperadoresDeConsultas.FiltroGroupBy();            
+            
+
+
+            Sintaxis s = new Sintaxis();
+            s.Test();
+
 
             ConsultasLINQ consultas = new ConsultasLINQ();
             consultas.EjemplosConsultasLINQNumeros();

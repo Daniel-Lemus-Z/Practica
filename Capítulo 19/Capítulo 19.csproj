@@ -46,6 +46,7 @@
     <Compile Include="ConsultasLINQ.cs" />
     <Compile Include="ConsultasParalelas.cs" />
     <Compile Include="Extension.cs" />
+    <Compile Include="Sintaxis.cs" />
     <Compile Include="OperadoresDeConsultas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

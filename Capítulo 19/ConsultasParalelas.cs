@@ -15,8 +15,8 @@ namespace Capítulo_19
         //Después del tratamiento, la lista se vuelve a unir para hacer el cálculo de la  media de los elementos restantes. 
         public static void CalcularValorMedio()
         {
-            int size = 150000000;
-            List<Int64> list = new List<Int64>(size);
+            int size = 400_000_000;
+            List<int> list = new List<int>(size);
             Random random = new Random();
            
             for (int i = 0; i < size; i++)
@@ -24,17 +24,31 @@ namespace Capítulo_19
                 list.Add(random.Next(20));
             }
 
-            double valorMedio = (from l in list.AsParallel()
-                                 where l > 10
-                                 select l).Average();
+
+            var valorMedio = (from l in list.AsParallel()
+                              where l > 10
+                              select l).Average();
+
 
             Console.WriteLine(valorMedio);
+
+            valorMedio = (from l in list
+                              where l > 10
+                              select l).Average();
+
+
+            Console.WriteLine(valorMedio);
+
+
+            double avg = list.AsParallel()
+                .Where(i => i > 10).Average();
+
         }
 
         public static void ParticionarUnaConsulta()
         {
-            int size = 150000000;
-            List<Int64> list = new List<Int64>(size);
+            int size = 400_000_000;
+            List<int> list = new List<int>(size);
             Random random = new Random();
 
             for (int i = 0; i < size; i++)
@@ -45,10 +59,10 @@ namespace Capítulo_19
             //El método estático Create recibe como argumento un array o un objeto que implementa la interfaz IList<T>.  
             //Éste permite influir en el paralelismo de la consulta.
             double valorMedio = (from l in Partitioner.Create(list, true)
-                                 .AsParallel()
-                                 .WithExecutionMode(ParallelExecutionMode.ForceParallelism)
-                                 .WithDegreeOfParallelism(10)
-                                 .WithMergeOptions(ParallelMergeOptions.AutoBuffered)
+                                                      .AsParallel()
+                                                      .WithExecutionMode(ParallelExecutionMode.ForceParallelism)
+                                                      .WithDegreeOfParallelism(4)
+                                                      .WithMergeOptions(ParallelMergeOptions.AutoBuffered)
                                  where l > 10
                                  select l).Average();
 
@@ -60,8 +74,8 @@ namespace Capítulo_19
         //A partir de la tarea principal, la consulta se puede anular invocando al método Cancel  del objeto CancellationTokenSource.
         public static void AnularConsulta()
         {
-            int size = 150000000;
-            List<Int64> list = new List<Int64>(size);
+            int size = 400_000_000;
+            List<int> list = new List<int>(size);
             Random random = new Random();
 
             for (int i = 0; i < size; i++)
@@ -70,21 +84,25 @@ namespace Capítulo_19
             }
 
             CancellationTokenSource ct = new CancellationTokenSource();
-            new Thread(() =>
-            {
-                try
+            Thread h = new Thread(
+                () =>
                 {
-                    double valorMedio = (from l in Partitioner
-                                         .Create(list, true).AsParallel()
-                                         .WithCancellation(ct.Token)
-                                         where l > 10
-                                         select l).Average();
-                }
-                catch (OperationCanceledException ex)
-                {
-                    Console.WriteLine(ex.ToString());
-                }
-            }).Start();
+                    try
+                    {
+                        double valorMedio = (from l in Partitioner.Create(list, true)
+                                                                  .AsParallel()
+                                                                  .WithCancellation(ct.Token)
+                                             where l > 10
+                                             select l).Average();
+                    }
+                    catch (OperationCanceledException ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                    }
+                });
+
+            h.Start();
+            Thread.Sleep(3000);
             ct.Cancel();
         }
 
