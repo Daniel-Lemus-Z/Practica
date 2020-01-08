@@ -227,31 +227,32 @@ namespace Capítulo_19
 
         public static void FiltroAgregar()
         {
-            //List<Jugador> titulares = new List<Jugador> { new Jugador {NombreCamiseta = "Pique", Dorsal = 3, Equipo = "Barcelona", IdEquipo = 1 },
-            //    new Jugador {NombreCamiseta = "Busquets", Dorsal = 5, Equipo = "Barcelona", IdEquipo = 1 },
-            //    new Jugador {NombreCamiseta = "Messi", Dorsal = 10, Equipo = "Barcelona", IdEquipo = 1 },
-            //    new Jugador {NombreCamiseta = "Dybala", Dorsal = 10, Equipo = "Juventus", IdEquipo = 2 },
-            //    new Jugador {NombreCamiseta = "Cristiano", Dorsal = 7, Equipo = "Juventus", IdEquipo = 2 },
-            //    new Jugador {NombreCamiseta = "Cuadrado", Dorsal = 16, Equipo = "Juventus", IdEquipo = 2 }
-            //};
+            List<Jugador> titulares = new List<Jugador> { new Jugador {NombreCamiseta = "Pique", Dorsal = 3, Equipo = "Barcelona", IdEquipo = 1 },
+                new Jugador {NombreCamiseta = "Busquets", Dorsal = 5, Equipo = "Barcelona", IdEquipo = 1 },
+                new Jugador {NombreCamiseta = "Messi", Dorsal = 10, Equipo = "Barcelona", IdEquipo = 1 },
+                new Jugador {NombreCamiseta = "Dybala", Dorsal = 10, Equipo = "Juventus", IdEquipo = 2 },
+                new Jugador {NombreCamiseta = "Cristiano", Dorsal = 7, Equipo = "Juventus", IdEquipo = 2 },
+                new Jugador {NombreCamiseta = "Cuadrado", Dorsal = 16, Equipo = "Juventus", IdEquipo = 2 }
+            };
 
-            //var query = from equipo in titulares
-            //            group equipo by equipo.IdEquipo into e
-            //            select new
-            //            {
-            //                IdEquipo = e.Key,
-            //                Count = e.Count()
-            //            };
+            var query = from equipo in titulares
+                        group equipo by equipo.IdEquipo == 1 into e
+                        select new
+                        {
+                            IdEquipo = e.Key,
+                            Count = e.Count()
+                        };
 
-            //foreach (var equipo in query)
-            //{
-            //    equipo.IdEquipo.ToString();
-            //}
+            foreach (var equipo in query)
+            {
+                equipo.IdEquipo.ToString();
+            }
 
-        }                
-             
+        }
+
         public static void FiltroConvertir()
         {
+               
 
         }
 
