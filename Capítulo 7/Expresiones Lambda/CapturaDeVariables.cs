@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Capítulo_7.Expresiones_Lambda
+namespace Capítulo_7.Expresiones_Lambda.CapturaDeVariables
 {
     public class CapturaDeVariables
     {
@@ -15,7 +15,7 @@ namespace Capítulo_7.Expresiones_Lambda
             return multiplo(10);
         }
 
-        //Las variablescapturadas seevalúan cuandose invocael delegadoy nocuando sedefine laexpresión lambda
+        //Las variablescapturadas seevalúan cuandose invoca el delegado y nocuando se define la expresión lambda
         public static int Test2(int factor)
         {
             Func<int, int> multiplo = x => x * factor; 
@@ -42,5 +42,28 @@ namespace Capítulo_7.Expresiones_Lambda
             Console.WriteLine("3: " + i3);
         }
 
+        internal static void Test4()
+        {            
+            Func<string>[] F = new Func<string>[3];
+            for (int i = 0; i < 3; i++)
+            {
+                F[i] = () => i.ToString();
+            }
+
+            string s = string.Empty;
+            foreach (Func<string> p in F)
+            {
+                Console.WriteLine(s += p());
+            }
+           
+            // Forma de preservar el valor de una variable como estaba en un momento en específico.
+            for (int i = 0; i < 3; i++)
+            {
+                int j = i;
+                F[i] = () => j.ToString();
+                Console.WriteLine(j);
+            }
+
+        }
     }
 }

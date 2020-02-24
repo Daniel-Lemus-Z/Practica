@@ -1,6 +1,8 @@
-﻿using Capítulo_7.Eventos;
-using Capítulo_7.Expresiones_Lambda;
-using System;
+﻿using Capítulo_7.Delegados.Delegados_Genéricos;
+using Capítulo_7.Eventos_RAYADO;
+using Capítulo_7.Expresiones_Lambda_RAYADO;
+using Capítulo_7.Expresiones_Lambda.CapturaDeVariables;
+using System;   
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,8 +26,7 @@ namespace Capítulo_7
 
         public delegate void Mostrar(int i);
 
-        //Un delegado puede contener parámetros de tipo genérico, en este caso, el tipo de indicara durante su instanciación 
-        public delegate T Calculo<T>(T i, T j);
+
 
 
         delegate void Delegado1();
@@ -44,17 +45,23 @@ namespace Capítulo_7
 
         static void Main(string[] args)
         {
-            ClaseConEventos1 e = new ClaseConEventos1();
+            Lambdas lb = new Lambdas();
+            lb.Multiplicacion2();
+            
+            
+            TestEventos tE = new TestEventos();
+            tE.TestEvento();
+
+
+            // Delegados genéricos
+            Clase1DG dg = new Clase1DG(5, 2);
+         
+
+            ClaseConEventos1 e = new ClaseConEventos1("a");
             //Se crea el evento y asigna el metodo estatico al evento, 
 
             //El operador += indica que se esta suscribiendo al evento
             //El operador -= indica que se esta desuscribiendo al evento
-
-            e.evento += OnEvento;
-            //hace lo mismo que la primera pero con el EventHandler, ambas funcionan igual
-            e.evento += new ClaseConEventos1.EventHandler(OnEvento);
-
-            e.OnEvento("HolaMundo");
 
 
             //----------------------------------------------------------------------------------------------------------
@@ -62,11 +69,7 @@ namespace Capítulo_7
             string result = obj1.WelcomeUser("Daniel");
             Console.WriteLine(result);
 
-
-
-
-
-
+                                          
 
             //Lambdas
             Lambdas l = new Lambdas();
@@ -91,38 +94,11 @@ namespace Capítulo_7
 
             CapturaDeVariables.Test3();
 
-
-
-            Func<string>[] F = new Func<string>[3];
-            for (int i = 0; i < 3; i++)
-            {
-                F[i] = () => i.ToString();
-            }
-
-            string s = string.Empty;
-            foreach (Func<string> p in F)
-            {
-                Console.WriteLine(s += p());
-            }
-
-
-            for (int i = 0; i < 3; i++)
-            {
-                int j = i;
-                F[i] = () => j.ToString();
-                Console.WriteLine(j);
-            }
-
+            CapturaDeVariables.Test4();
+                                   
 
 
             Console.ReadLine();
-
-
-
-
-
-
-
 
         }
 

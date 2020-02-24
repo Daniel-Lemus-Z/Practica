@@ -14,9 +14,13 @@ namespace Capítulo_7.Expresiones_Lambda
         {
             set
             {
-                string Func() => value ?? this.filename;
+                // Función local, sintaxis normal.
+                // string FuncL() { return value ?? this.filename; }
 
-                if (this.filename != Func())
+                // Función local, sintaxis de expresión, lambda.
+                string FuncL() { return value ?? this.filename; }
+
+                if (this.filename != FuncL())
                 {
                     this.filename = value;
                 }
